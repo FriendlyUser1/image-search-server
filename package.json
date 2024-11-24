@@ -1,0 +1,27 @@
+{
+	"name": "vehicleimg",
+	"version": "1.0.0",
+	"main": "dist/server.js",
+	"scripts": {
+		"build:server": "tsc -p tsconfig.json",
+		"build:public": "tsc -p public/tsconfig.json",
+		"build": "npm run build:server && npm run build:public"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"description": "",
+	"dependencies": {
+		"async-image-search": "^1.0.1",
+		"axios": "^1.7.7",
+		"cheerio": "^1.0.0",
+		"express": "^4.21.1",
+		"lowdb": "^7.0.1"
+	},
+	"devDependencies": {
+		"@types/cheerio": "^0.22.35",
+		"@types/express": "^5.0.0",
+		"@types/node": "^22.9.1"
+	}
+}

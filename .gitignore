@@ -1,0 +1,6 @@
+dist/
+node_modules/
+public/images/*
+cachedQueries.json
+keys/
+/public/js
