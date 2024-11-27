@@ -1,6 +1,7 @@
 dist/
 node_modules/
 public/images/*
+public/assets
+public/*.html
 cachedQueries.json
 keys/
-/public/js

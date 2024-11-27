@@ -3,8 +3,10 @@
 	"version": "1.0.0",
 	"main": "dist/server.js",
 	"scripts": {
+		"start": "node .",
+		"start:public": "vite --config src/vite.config.ts",
 		"build:server": "tsc -p tsconfig.json",
-		"build:public": "tsc -p public/tsconfig.json",
+		"build:public": "vite build --config src/vite.config.ts",
 		"build": "npm run build:server && npm run build:public"
 	},
 	"keywords": [],
@@ -13,15 +15,21 @@
 	"type": "module",
 	"description": "",
 	"dependencies": {
+		"@vitejs/plugin-react": "^4.3.4",
 		"async-image-search": "^1.0.1",
 		"axios": "^1.7.7",
 		"cheerio": "^1.0.0",
 		"express": "^4.21.1",
-		"lowdb": "^7.0.1"
+		"lowdb": "^7.0.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"vite": "^6.0.1"
 	},
 	"devDependencies": {
 		"@types/cheerio": "^0.22.35",
 		"@types/express": "^5.0.0",
-		"@types/node": "^22.9.1"
+		"@types/node": "^22.9.1",
+		"@types/react": "^18.3.12",
+		"@types/react-dom": "^18.3.1"
 	}
 }

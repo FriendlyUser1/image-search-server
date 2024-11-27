@@ -9,11 +9,15 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
-		<script defer src="./js/dashboard.js"></script>
+		<style>
+			th:nth-child(5),
+			td:nth-child(5) {
+				text-align: center;
+			}
+		</style>
 		<title>Cache management dashboard</title>
 	</head>
-	<body onload="getImages()">
+	<body>
 		<div class="container">
 			<table class="table table-striped">
 				<thead>
@@ -25,9 +29,10 @@
 						<th scope="col">Delete?</th>
 					</tr>
 				</thead>
-				<tbody id="imageTable"></tbody>
+				<tbody id="root"></tbody>
 			</table>
 		</div>
+		<script type="module" src="index.tsx"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
